@@ -1,0 +1,14 @@
+﻿@model IEnumerable<FileModel>
+
+<h3>Выберете файл</h3>
+<form asp-action="InsertFile" asp-controller="FileModel" method="post" enctype="multipart/form-data">
+    <input type="file" name="uploadedFile" />
+    <br />
+    <input type="submit" value="Загрузить" />
+</form>
+
+<h3>Все файлы</h3>
+@foreach (var f in Model)
+{
+    <p><img src="@Url.Content(f.Path)"/></p>
+}

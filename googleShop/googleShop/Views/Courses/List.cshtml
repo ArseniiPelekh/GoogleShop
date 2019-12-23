@@ -1,0 +1,12 @@
+﻿<br />
+<h3>Список курсов: </h3>
+<h4>@Model.currCourse</h4>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Course cour in Model.getCourses)
+        {
+            @Html.Partial("AllCourse", cour)
+        }
+    }
+</div>
+

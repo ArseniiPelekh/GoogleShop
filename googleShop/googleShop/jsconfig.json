@@ -1,0 +1,13 @@
+{
+  "AppIdentitySettings": {
+    "UserEmail": {
+      "Eamil": "a.pelekhwork@gmail.com",
+      "Password": "epolup88"
+    },
+
+    "SettingEmail": {
+      "Host": "smtp.gmail.com",
+      "Port": 587
+    }
+  }
+}

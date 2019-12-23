@@ -1,0 +1,11 @@
+﻿@model HomeViewModel
+
+<h3>Лучшие курсы: </h3>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Course cour in Model.courses)
+        {
+            @Html.Partial("AllCourse", cour)
+        }
+    }
+</div>
